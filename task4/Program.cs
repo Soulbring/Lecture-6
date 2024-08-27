@@ -6,7 +6,7 @@ void Main()
 {
 
 Console.WriteLine("ВВедите текст через пробелы: ");
-string? letter = Console.ReadLine();
+string? letter = Console.ReadLine()!;
 string[] LetterArray = letter.Split();
 Array.Reverse(LetterArray);
 letter = string.Join(" ", LetterArray);
